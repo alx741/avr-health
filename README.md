@@ -6,5 +6,5 @@ Recently Fake Atmel AVR microcontrollers have been found, see
 [here](https://www.sparkfun.com/news/395).
 
 This code attempts to stress an AVR microcontroller and use all the possible
-functionalities and hardware it contains, in order to bench mark the results and
+features and hardware it contains, in order to bench mark the results and
 compare them to a chip that is know to be authentic.
