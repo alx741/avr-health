@@ -28,3 +28,12 @@ instructions will say so.
 Some tests contain circuit schematics of the circuit needed, but the programming
 circuit is omitted. You should already have a programmer and be able to put a
 firmware on the chip using [avrdude](http://www.nongnu.org/avrdude/).
+
+
+## Available tests
+
+Currently there are test for:
+
+* FLASH program memory
+* SRAM data memory
+* EEPROM memory
