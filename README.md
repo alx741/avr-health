@@ -18,6 +18,9 @@ hardware is supposed).
 Each test is contained on its own directory and have a `README.md` file with
 the instructions for it.
 
+Be sure to modify each `Makefile` and change the **MMCU** variable to match the
+chip you're using.
+
 All the examples used in the instructions are based in the *ATMEGA32A* chip.
 When changes in the code are required for using with other parts, the
 instructions will say so.
