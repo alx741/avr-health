@@ -1,4 +1,4 @@
-# Fake AVR microcontrollers
+# Health and Fake AVR microcontrollers tests
 
 Recently Fake Atmel AVR microcontrollers have been found, see
 [here](http://andybrown.me.uk/2015/05/31/cheap-atmega8/),
