@@ -26,9 +26,9 @@ if [[ -f 'program.c' ]]; then
     rm 'program.c'
 fi
 
-# Each 'i++' line takes ~144Bytes in the final HEX file, so ~6 'i++' lines is ~1KB
-NUM_INSTRUCTIONS=$(($1*6))
-ACTUAL_SIZE=$(($NUM_INSTRUCTIONS*144))
+# Each 'i++' line takes ~48Bytes in the final HEX file, so ~19 'i++' lines is ~1KB
+NUM_INSTRUCTIONS=$(($1*19))
+ACTUAL_SIZE=$(($NUM_INSTRUCTIONS*48))
 
 echo "#include <avr/io.h>" >> program.c
 echo "double i=0;" >> program.c
@@ -49,13 +49,9 @@ echo
 echo "* Write it to the target chip using avrdude like this:"
 echo -e "\t$ avrdude -p <chip> -c <programmer> -U flash:w:program.hex:i"
 echo
-echo "* Disconnect your chip completly and turn off any power source."
-echo "  Leave it like that for at least 5 minutes."
+echo "* Disconnect your chip completely, remove any big capacitor and turn \
+off any power source."
+echo "  Leave it like that for at least 1 minute."
 echo
-echo "* Now connect the chip and read the flash using avrdude like this:"
-echo -e "\t$ avrdude -p <chip> -c <programmer> -U flash:r:program_read.hex:i"
-echo
-echo "* Finally use diff to verify the source HEX and the read HEX files are \
-identical"
-echo -e "\t$ diff -s program.hex program_read.hex"
-echo
+echo "* Finally connect the chip and verify the flash memory using avrdude:"
+echo -e "\t$ avrdude -p <chip> -c <programmer> -U flash:v:program_read.hex:i"
