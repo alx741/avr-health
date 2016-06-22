@@ -15,6 +15,7 @@ For this test the following circuit is required:
   progress.
 * The `green` LED means **success**. Test has finished successfully. Hurray!
 * The `red` LED means **failure**. The test has finished with failure. Bummer.
+* If the `yellow` LED never turns off it also means **failure**.
 
 
 1. Mount the circuit
