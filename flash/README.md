@@ -38,6 +38,6 @@ and programmer respectively.
 
 5. Finally connect the chip and verify the flash memory using avrdude:
 
-    $ avrdude -p \<CHIP> -c \<PROGRAMMER> -U flash:v:program_read.hex:i
+    $ avrdude -p \<CHIP> -c \<PROGRAMMER> -U flash`:v:`program_read.hex:i
 
     Arvdude should report a successful verification.
