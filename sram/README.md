@@ -7,9 +7,7 @@ process is repeated a couple times with multiple different patterns.
 
 ## How-to
 
-For this test the following circuit is required:
-
-![](schematic.png)
+For this test the `basic.pdf` circuit is required.
 
 * The `yellow` LED means **working**. Don't touch anything, the test is on
   progress.
