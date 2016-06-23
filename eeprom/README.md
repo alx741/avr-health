@@ -20,16 +20,19 @@ For this test the following circuit is required:
 
 1. Mount the circuit
 
-2. Build the firmware by running:
+2. Modify `test.c` to define **EEPROM_KB** to the amount (in KB) of the target
+    chip
+
+3. Build the firmware by running:
 
     $ make
 
     That will generate a `test.hex` file.
 
-3. Write the `HEX` file to the chip using avrdude:
+4. Write the `HEX` file to the chip using avrdude:
 
     $ avrdude -p \<CHIP> -c \<PROGRAMMER> -U flash:w:test.hex:i
 
-4. Connect the chip to the power supply so the `yellow` LED is on.
+5. Connect the chip to the power supply so the `yellow` LED is on.
 
-5. Wait until either the `green` or `red` LED turns on
+6. Wait until either the `green` or `red` LED turns on
