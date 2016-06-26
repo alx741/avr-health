@@ -1,6 +1,6 @@
-# USART test
+# UART test
 
-This test uses a USART connection running at 4800bps using the internal 1Mhz
+This test uses a UART connection running at 4800bps using the internal 1Mhz
 clock.
 
 A USB to UART adapter is required.
