@@ -37,3 +37,6 @@ Currently there are test for:
 * FLASH program memory
 * SRAM data memory
 * EEPROM memory
+* External interrupts
+* Timers (CTC mode)
+* UART
